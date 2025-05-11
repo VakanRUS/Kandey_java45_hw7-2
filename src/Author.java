@@ -9,10 +9,6 @@ public class Author {
         this.nameLast = nameLast;
     }
 
-    public String toString() {
-        return nameFirst + " " + nameLast;
-    }
-
     public String getNameFirst() {
         return nameFirst;
     }
@@ -31,5 +27,10 @@ public class Author {
     @Override
     public int hashCode() {
         return Objects.hash(nameFirst, nameLast);
+    }
+
+    @Override
+    public String toString() {
+        return nameFirst + " " + nameLast;
     }
 }
